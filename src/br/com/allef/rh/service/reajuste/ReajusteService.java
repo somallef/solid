@@ -18,7 +18,7 @@ public class ReajusteService {
         this.validacoes.forEach(v -> v.validar(funcionario, aumento));
 
         //se todas as validações passarem, isto é, se nenhuma exceção for lançada pelas validações, o código abaixo é executado
-        BigDecimal salarioReajustado = funcionario.getSalario().add(aumento);
+        BigDecimal salarioReajustado = funcionario.getDadosPessoais().getSalario().add(aumento);
         funcionario.atualizarSalario(salarioReajustado);
     }
 }
