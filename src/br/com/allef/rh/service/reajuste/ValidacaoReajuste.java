@@ -1,4 +1,4 @@
-package br.com.allef.rh.service;
+package br.com.allef.rh.service.reajuste;
 
 import br.com.allef.rh.model.Funcionario;
 
